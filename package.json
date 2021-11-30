@@ -1,6 +1,7 @@
 {
   "name": "@Borealisswap-libs/Borealis-swap-core",
   "description": "Core contracts for the Borealis protocol",
+  "main": "truffle-config.js",
   "version": "0.1.0",
   "homepage": "https://Borealisswap.finance",
   "repository": {
@@ -31,6 +32,12 @@
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
   },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "truffle": "^5.4.22",
+    "truffle-flattener": "^1.4.4",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
   "scripts": {
     "lint": "yarn prettier ./test/*.ts --check",
     "lint:fix": "yarn prettier ./test/*.ts --write",
@@ -41,10 +48,5 @@
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
-  "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "truffle-hdwallet-provider": "^1.0.17",
-    "truffle": "^5.1.41",
-    "truffle-flattener": "^1.4.4"
-  }
+  "license": "GPL-3.0-or-later"
 }
